@@ -20,6 +20,7 @@
 
 ::-webkit-scrollbar-thumb {
   background-color: #9e9ea0;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:active {
@@ -35,6 +36,16 @@
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes links {
+  from {
+    color: #eaeaea;
+  }
+
+  to {
+    color: #8257e5
   }
 }
 
@@ -148,7 +159,8 @@ p a {
   color: #eaeaea;
 }
 
-p:active a {
+p:hover a {
+  animation: links 1s ease-in-out;
   color: #8257e5;
 }
 
