@@ -39,16 +39,6 @@
   }
 }
 
-@keyframes links {
-  from {
-    color: #eaeaea;
-  }
-
-  to {
-    color: #8257e5
-  }
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #121215;
@@ -157,19 +147,20 @@ aside span {
 p a {
   text-decoration: none;
   color: #eaeaea;
+  transition: color 1s;
 }
 
-p:hover a {
-  animation: links 1s ease-in-out;
+p a:hover {
   color: #8257e5;
 }
 
 span a {
   text-decoration: block;
   color: #9e9ea0;
+  transition: color 1s;
 }
 
-span:active a {
+span a:hover {
   color: #5c3ea3;
 }
 
